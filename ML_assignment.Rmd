@@ -2,7 +2,7 @@
 title: "Human Activity Recognition Analysis"
 author: "Chiara Todaro"
 date: "19 March 2019"
-output: htlm_document
+output: html_document
 ---
 <!-- knit: (function(input_file, encoding) { -->
 <!--   out_dir <- 'docs'; -->
@@ -151,7 +151,7 @@ names(accuracyCV)[1:4]<-c("belt","arm","dumbell","forearm");accuracyCV
 The most accurate prediction is obtained combining all variables (row 15) with in-sample and 
 out-sample accuracy of `r accuracyCV[15,5]*100`% and `r accuracyCV[15,6]*100`%, respectively.
 Since in the cross-validation procedure the out-sample accuracy is 
-`r accuracyCV[15,5]*100-accuracyCV[15,6]*100`% lower than the in-sample accuracy, similar 
+`r accuracyCV[15,5]-accuracyCV[15,6]`% lower than the in-sample accuracy, similar 
 performances are expected in the testing set.
 
 ### Training set accuracy
@@ -184,7 +184,7 @@ The in-sample accuracy of the whole training set is `r mean(predTREE==dataFit$cl
 the average probability of correct prediction is `r mean(as.numeric(lapply(predProb,max)))` with 
 standard deviation of `r sd(as.numeric(lapply(predProb,max)))`.
 The expected out-sample accuracy is around 
-`r abs(mean(predTREE==dataFit$classe)*100-accuracyCV[15,5]*100-accuracyCV[15,6]*100)`%.
+`r abs(mean(predTREE==dataFit$classe)*100- accuracyCV[15,5]-accuracyCV[15,6])`%.
 
 ### Prediction of testing set
 ```{r testing_analysis}

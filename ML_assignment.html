@@ -129,7 +129,11 @@ $(document).ready(function () {
 </div>
 
 
-<p>knit: (function(input_file, encoding) { out_dir &lt;- ‘docs’; rmarkdown::render(input_file, encoding=encoding, output_file=file.path(dirname(input_file), out_dir, ‘index.html’))})</p>
+<!-- knit: (function(input_file, encoding) { -->
+<!--   out_dir <- 'docs'; -->
+<!--   rmarkdown::render(input_file, -->
+<!--  encoding=encoding, -->
+<!--  output_file=file.path(dirname(input_file), out_dir, 'index.html'))}) -->
 <!-- You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases. -->
 <div id="synopsis" class="section level2">
 <h2>Synopsis</h2>
@@ -180,7 +184,7 @@ Raw data: roll signals
 ## 13    1   1       0       1      92.18588     87.47135
 ## 14    1   1       1       0      92.96751     89.59449
 ## 15    1   1       1       1      94.17900     90.83270</code></pre>
-<p>The most accurate prediction is obtained combining all variables (row 15) with in-sample and out-sample accuracy of 9417.8998526% and 9083.2696715%, respectively. Since in the cross-validation procedure the out-sample accuracy is 334.6301811% lower than the in-sample accuracy, similar performances are expected in the testing set.</p>
+<p>The most accurate prediction is obtained combining all variables (row 15) with in-sample and out-sample accuracy of 9417.8998526% and 9083.2696715%, respectively. Since in the cross-validation procedure the out-sample accuracy is 3.3463018% lower than the in-sample accuracy, similar performances are expected in the testing set.</p>
 </div>
 <div id="training-set-accuracy" class="section level3">
 <h3>Training set accuracy</h3>
@@ -192,7 +196,7 @@ Raw data: roll signals
 ##        C  0.09173377  0.44847620 16.30312914  0.58607685  0.20385282
 ##        D  0.19875650  0.29049027  0.25991234 15.09530119  0.20385282
 ##        E  0.05096320  0.24462338  0.12231169  0.14779329 17.58230558</code></pre>
-<p>The in-sample accuracy of the whole training set is 94.4093365% and the average probability of correct prediction is 0.9440934 with standard deviation of 0.1208337. The expected out-sample accuracy is around 1.84067610^{4}%.</p>
+<p>The in-sample accuracy of the whole training set is 94.4093365% and the average probability of correct prediction is 0.9440934 with standard deviation of 0.1208337. The expected out-sample accuracy is around 90.6023588%.</p>
 </div>
 <div id="prediction-of-testing-set" class="section level3">
 <h3>Prediction of testing set</h3>
