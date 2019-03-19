@@ -2,6 +2,7 @@
 title: "Human Activity Recognition Analysis"
 author: "Chiara Todaro"
 date: "19 March 2019"
+output: htlm_document
 ---
 <!-- knit: (function(input_file, encoding) { -->
 <!--   out_dir <- 'docs'; -->
