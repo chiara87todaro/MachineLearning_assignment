@@ -2,4 +2,4 @@
 
 See the Human Activity Recognition analysis at the following
 
-[Link](https://github.com/chiara87todaro/MachineLearning_assignment/ML_assignment.html) 
+[Link](https://chiara87todaro.github.io/MachineLearning_assignment/ML_assignment.html) 
